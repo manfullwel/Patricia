@@ -1,9 +1,9 @@
 
-# Blueprint: Homenagem Patrícia Caprio
+# Blueprint: The Gem & The Anchor
 
 ## Visão Geral
 
-O objetivo deste projeto é criar uma landing page de alta performance, segura e mobile-first em homenagem a Patrícia Caprio, celebrando 35 dias de conexão. A aplicação será migrada do ambiente de desenvolvimento local para produção na Vercel, com um fluxo de trabalho de CI/CD totalmente automatizado via GitHub.
+O objetivo deste projeto é criar uma landing page romântica e interativa chamada "The Gem & The Anchor", celebrando a jornada de 400 dias de Patrícia ("The Peruvian Tornado") e Igor ("The Anchor") desde o primeiro contato em 22 de novembro de 2024. A aplicação será uma experiência imersiva, rica em animações e interatividade, construída com Next.js 14 e hospedada na Vercel.
 
 ## Stack de Tecnologia
 
@@ -12,28 +12,62 @@ O objetivo deste projeto é criar uma landing page de alta performance, segura e
 *   **Animações:** Framer Motion
 *   **Banco de Dados:** MongoDB
 *   **Hospedagem:** Vercel
+*   **UI/Icons:** Lucide React
 
 ---
 
-## Plano de Migração e Automação
+## Plano de Implementação
 
-### Passo 1: Configuração de CI/CD (GitHub + Vercel)
+### Passo 1: Limpeza e Configuração do Projeto
 
-*   **Ação:** Conectar o repositório do GitHub à Vercel para habilitar deploys automáticos a cada `git push`.
-*   **Status:** Concluído.
+*   **Ação:** Remover os arquivos e componentes do projeto anterior para dar lugar à nova estrutura.
+*   **Status:** A fazer.
 
-### Passo 2: Segurança de Dados com Variáveis de Ambiente
+### Passo 2: Instalação de Dependências
 
-*   **Ação:** Configurar a `MONGODB_URI` e outras chaves sensíveis de forma segura nas Environment Variables da Vercel.
-*   **Status:** Concluído (via Dashboard da Vercel).
+*   **Ação:** Instalar as bibliotecas necessárias para as novas funcionalidades.
+    *   `framer-motion`
+    *   `lucide-react`
+    *   `mongoose`
+    *   `react-confetti`
+*   **Status:** A fazer.
 
-### Passo 3: Automação de "Presença Real" com Vercel Cron Job
+### Passo 3: Implementação dos Componentes e Features
 
-*   **Ação:** Criar uma Serverless Function para buscar dados em tempo real (clima de Brasília) e agendar sua execução periódica com um Cron Job.
-*   **Objetivo:** Alimentar o "teste do bot" da Patrícia com informações dinâmicas.
-*   **Status:** A ser executado.
+1.  **Hero Section - Tornado → Heart Transformation:**
+    *   Criar uma animação com Framer Motion que transforma um polígono de tornado em um coração no carregamento da página.
 
-### Passo 4: Otimização Mobile-First
+2.  **Days Counter:**
+    *   Desenvolver um contador dinâmico que exibe o número de dias desde 22 de novembro de 2024.
 
-*   **Ação:** Revisar e ajustar as configurações do `next.config.js` e as opções de deploy da Vercel para garantir um carregamento ultrarrápido em dispositivos móveis.
-*   **Status:** A ser executado.
+3.  **Timeline - "Nossa Jornada":**
+    *   Implementar uma linha do tempo com auto-progressão que revela os marcos do relacionamento a cada 3 segundos.
+
+4.  **Cusco Section - "A Joia e a Moldura":**
+    *   Criar uma seção interativa sobre a casa dos sonhos em Cusco, com design em glassmorphism.
+
+5.  **Carne e Osso - Reality Test:**
+    *   Desenvolver elementos clicáveis que revelam detalhes do mundo real (chuva, café, música).
+
+6.  **Thoughts Form - Integração com MongoDB:**
+    *   Construir um formulário para os usuários enviarem mensagens e planos, com validação, estados de loading e feedback de sucesso (confetti).
+    *   Criar a API route (`/api/plans`) e o schema do Mongoose para salvar os dados.
+
+7.  **Efeitos Interativos:**
+    *   Implementar um gradiente que segue o cursor do mouse.
+    *   Adicionar corações que aparecem aleatoriamente com o movimento do mouse.
+
+8.  **Background Particles:**
+    *   Criar um fundo com partículas flutuantes para uma atmosfera etérea.
+
+*   **Status:** A fazer.
+
+### Passo 4: Estilização e Design
+
+*   **Ação:** Aplicar a filosofia de design "Strength meets Elegance" usando a paleta de cores, glassmorphism e gradientes definidos.
+*   **Status:** A fazer.
+
+### Passo 5: Deploy na Vercel
+
+*   **Ação:** Fazer o push das alterações para o GitHub, acionando o deploy automático na Vercel.
+*   **Status:** A fazer.
