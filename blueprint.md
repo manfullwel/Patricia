@@ -20,12 +20,12 @@ O objetivo deste projeto é criar uma landing page de alta performance, segura e
 ### Passo 1: Configuração de CI/CD (GitHub + Vercel)
 
 *   **Ação:** Conectar o repositório do GitHub à Vercel para habilitar deploys automáticos a cada `git push`.
-*   **Status:** A ser executado.
+*   **Status:** Concluído.
 
 ### Passo 2: Segurança de Dados com Variáveis de Ambiente
 
 *   **Ação:** Configurar a `MONGODB_URI` e outras chaves sensíveis de forma segura nas Environment Variables da Vercel.
-*   **Status:** A ser executado.
+*   **Status:** Concluído (via Dashboard da Vercel).
 
 ### Passo 3: Automação de "Presença Real" com Vercel Cron Job
 
